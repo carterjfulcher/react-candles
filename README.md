@@ -1,16 +1,8 @@
 # React Financial Charts
 
-> **Note:** this repo originates from [react-stockcharts](https://github.com/rrag/react-stockcharts), renamed, converted to typescript and bug fixes applied due to the original project being unmaintained.
+> **Note:** this repo originates from [react-stockcharts](https://github.com/rrag/react-stockcharts). It was converted to typescript by `react-financial` under the name, `react-financial-charts`, and in this latest fork, `react-candles` functional components and realtime support was added.
 
-> **Note** this repo was forked from [react-financial-charts](https://github.com/react-financial/react-financial-charts) but is actively maintained and documented
-
-<!-- ![ci](https://github.com/react-financial/react-financial-charts/workflows/ci/badge.svg)
-[![codecov](https://codecov.io/gh/reactivemarkets/react-financial-charts/branch/master/graph/badge.svg)](https://codecov.io/gh/reactivemarkets/react-financial-charts)
- [![GitHub license](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/react-financial/react-financial-charts/blob/master/LICENSE) [![npm version](https://img.shields.io/npm/v/react-financial-charts.svg?style=flat)](https://www.npmjs.com/package/react-financial-charts) -->
-
-Finance Charts
-
-The aim with this project is create financial charts that work out of the box.
+Candle Stick Charts
 
 ## Features
 
@@ -83,25 +75,6 @@ To start up a development server run:
 ```bash
 npm start
 ```
-
-## Roadmap
-
--   [x] Convert to typescript
--   [x] Bump dependencies to latest
--   [x] Remove React 16 warnings
--   [x] Add CI
--   [x] Fix passive scrolling issues
--   [x] Implement PRs from react-stockcharts
--   [x] Add all typings
--   [x] Move examples to storybook
--   [x] Add all series' to storybook
--   [x] Split project into multiple packages
--   [x] Fix issues with empty datasets
--   [x] Correct all class props
--   [x] Migrate to new React Context API
--   [x] Remove all UNSAFE methods
--   [ ] Add documentation to storybook
--   [ ] Add full test suite
 
 ## LICENSE
 
