@@ -63,7 +63,7 @@ To get started run:
 
 ```bash
 git clone https://github.com/react-financial/react-financial-charts.git
-cd react-financial-charts
+cd react-candles
 npm ci
 npm run build
 ```
@@ -73,7 +73,3 @@ To start up a development server run:
 ```bash
 npm start
 ```
-
-## LICENSE
-
-[![FOSSA Status](https://app.fossa.com/api/projects/custom%2B13613%2Fgit%40github.com%3Areactivemarkets%2Freact-financial-charts.git.svg?type=large)](https://app.fossa.com/projects/custom%2B13613%2Fgit%40github.com%3Areactivemarkets%2Freact-financial-charts.git?ref=badge_large)
