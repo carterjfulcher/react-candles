@@ -1,8 +1,6 @@
-# React Financial Charts
+# React Candles
 
 > **Note:** this repo originates from [react-stockcharts](https://github.com/rrag/react-stockcharts). It was converted to typescript by `react-financial` under the name, `react-financial-charts`, and in this latest fork, `react-candles` functional components and realtime support was added.
-
-Candle Stick Charts
 
 ## Features
 
