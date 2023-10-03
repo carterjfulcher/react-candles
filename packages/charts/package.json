@@ -34,19 +34,20 @@
         "compile": "tsc -p tsconfig.json"
     },
     "dependencies": {
-        "@react-candles/annotations": "file:../annotations",
-        "@react-candles/axes": "file:../axes",
-        "@react-candles/coordinates": "file:../coordinates",
-        "@react-candles/core": "file:../core",
-        "@react-candles/indicators": "file:../indicators",
-        "@react-candles/interactive": "file:../interactive",
-        "@react-candles/scales": "file:../scales",
-        "@react-candles/series": "file:../series",
-        "@react-candles/tooltip": "file:../tooltip",
-        "@react-candles/utils": "file:../utils"
+        "@react-candles/annotations": "^2.0.0",
+        "@react-candles/axes": "^2.0.0",
+        "@react-candles/coordinates": "^2.0.0",
+        "@react-candles/core": "^2.0.0",
+        "@react-candles/indicators": "^2.0.0",
+        "@react-candles/interactive": "^2.0.0",
+        "@react-candles/scales": "^2.0.0",
+        "@react-candles/series": "^2.0.0",
+        "@react-candles/tooltip": "^2.0.0",
+        "@react-candles/utils": "^2.0.1"
     },
     "peerDependencies": {
         "react": "^16.0.0 || ^17.0.0 || ^18.0.0",
         "react-dom": "^16.0.0 || ^17.0.0 || ^18.0.0"
-    }
+    },
+    "gitHead": "cd336ad57345d5e8f031b5402b6fbbf6343be575"
 }

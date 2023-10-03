@@ -42,7 +42,8 @@
         "react-dom": "^16.0.0 || ^17.0.0 || ^18.0.0"
     },
     "dependencies": {
-        "@react-candles/core": "file:../core",
+        "@react-candles/core": "^2.0.0",
         "@types/d3-scale": "^3.2.2"
-    }
+    },
+    "gitHead": "cd336ad57345d5e8f031b5402b6fbbf6343be575"
 }
