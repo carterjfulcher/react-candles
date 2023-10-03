@@ -27,7 +27,7 @@ export interface MACDSeriesProps {
  */
 export class MACDSeries extends React.Component<MACDSeriesProps> {
     public static defaultProps = {
-        className: "react-financial-charts-macd-series",
+        className: "react-candles-macd-series",
         clip: true,
         fillStyle: {
             divergence: "rgba(70, 130, 180, 0.6)",

@@ -2,7 +2,7 @@ import * as React from "react";
 
 export class ToolTipText extends React.PureComponent<React.SVGProps<SVGTextElement>> {
     public static defaultProps = {
-        className: "react-financial-charts-tooltip",
+        className: "react-candles-tooltip",
         fontFamily: "-apple-system, system-ui, 'Helvetica Neue', Ubuntu, sans-serif",
         fontSize: 11,
     };

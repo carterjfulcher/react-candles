@@ -1,6 +1,6 @@
 import * as React from "react";
-import { isDefined, noop } from "@react-financial-charts/core";
-import { getXValue } from "@react-financial-charts/core/lib/utils/ChartDataUtil";
+import { isDefined, noop } from "@react-candles/core";
+import { getXValue } from "@react-candles/core/lib/utils/ChartDataUtil";
 import { isHover, saveNodeType } from "../utils";
 import { ClickableCircle, GannFan, HoverTextNearMouse } from "../components";
 
@@ -113,14 +113,14 @@ export class EachGannFan extends React.Component<EachGannFanProps, EachGannFanSt
                     {this.getEdgeCircle({
                         xy: startXY,
                         dragHandler: this.handleLine1Edge1Drag,
-                        cursor: "react-financial-charts-move-cursor",
+                        cursor: "react-candles-move-cursor",
                         fill: edgeFill,
                         edge: "edge1",
                     })}
                     {this.getEdgeCircle({
                         xy: endXY,
                         dragHandler: this.handleLine1Edge2Drag,
-                        cursor: "react-financial-charts-move-cursor",
+                        cursor: "react-candles-move-cursor",
                         fill: edgeFill,
                         edge: "edge2",
                     })}
@@ -141,7 +141,7 @@ export class EachGannFan extends React.Component<EachGannFanProps, EachGannFanSt
                     fontFamily={fontFamily}
                     fontSize={fontSize}
                     fontFill={fontFill}
-                    interactiveCursorClass="react-financial-charts-move-cursor"
+                    interactiveCursorClass="react-candles-move-cursor"
                     onDragStart={this.handleDragStart}
                     onDrag={this.handleFanDrag}
                     onDragComplete={onDragComplete}

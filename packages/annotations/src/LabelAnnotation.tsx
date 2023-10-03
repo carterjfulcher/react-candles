@@ -1,4 +1,4 @@
-import { functor } from "@react-financial-charts/core";
+import { functor } from "@react-candles/core";
 import { ScaleContinuousNumeric } from "d3-scale";
 import * as React from "react";
 
@@ -53,7 +53,7 @@ export interface LabelAnnotationProps {
 
 export class LabelAnnotation extends React.Component<LabelAnnotationProps> {
     public static defaultProps = {
-        className: "react-financial-charts-label-annotation",
+        className: "react-candles-label-annotation",
         textAnchor: "middle",
         fontFamily: "-apple-system, system-ui, Roboto, 'Helvetica Neue', Ubuntu, sans-serif",
         fontSize: 12,

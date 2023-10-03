@@ -5,6 +5,6 @@ addons.setConfig({
     theme: create({
         base: "light",
         brandTitle: "React Financial Charts",
-        brandUrl: "https://github.com/reactivemarkets/react-financial-charts",
+        brandUrl: "https://github.com/reactivemarkets/react-candles",
     }),
 });

@@ -1,5 +1,5 @@
 import * as React from "react";
-import { strokeDashTypes } from "@react-financial-charts/core";
+import { strokeDashTypes } from "@react-candles/core";
 import { LineSeries } from "./LineSeries";
 import { StraightLine } from "./StraightLine";
 import { SVGComponent } from "./SVGComponent";
@@ -38,7 +38,7 @@ export interface RSISeriesProps {
  */
 export class RSISeries extends React.Component<RSISeriesProps> {
     public static defaultProps = {
-        className: "react-financial-charts-rsi-series",
+        className: "react-candles-rsi-series",
         strokeStyle: {
             line: "#000000",
             top: "#B8C2CC",

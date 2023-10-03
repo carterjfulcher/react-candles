@@ -46,7 +46,7 @@ export function withOHLCData(dataSet = "DAILY") {
 
             public componentDidMount() {
                 fetch(
-                    `https://raw.githubusercontent.com/reactivemarkets/react-financial-charts/master/packages/stories/src/data/${dataSet}.tsv`,
+                    `https://raw.githubusercontent.com/reactivemarkets/react-candles/master/packages/stories/src/data/${dataSet}.tsv`,
                 )
                     .then((response) => response.text())
                     .then((data) => tsvParse(data, parseData()))

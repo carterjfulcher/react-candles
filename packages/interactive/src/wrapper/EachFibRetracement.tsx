@@ -1,6 +1,6 @@
 import * as React from "react";
-import { head, last, noop } from "@react-financial-charts/core";
-import { getXValue } from "@react-financial-charts/core/lib/utils/ChartDataUtil";
+import { head, last, noop } from "@react-candles/core";
+import { getXValue } from "@react-candles/core/lib/utils/ChartDataUtil";
 import { isHover, saveNodeType } from "../utils";
 import { ClickableCircle, HoverTextNearMouse, InteractiveStraightLine, generateLine, Text } from "../components";
 import { getNewXY } from "./EachTrendLine";
@@ -134,12 +134,12 @@ export class EachFibRetracement extends React.Component<EachFibRetracementProps,
                     const firstOrLast = j === 0 || j === lines.length - 1;
 
                     const interactiveCursorClass = firstOrLast
-                        ? "react-financial-charts-ns-resize-cursor"
-                        : "react-financial-charts-move-cursor";
+                        ? "react-candles-ns-resize-cursor"
+                        : "react-candles-move-cursor";
 
                     const interactiveEdgeCursorClass = firstOrLast
-                        ? "react-financial-charts-ns-resize-cursor"
-                        : "react-financial-charts-ew-resize-cursor";
+                        ? "react-candles-ns-resize-cursor"
+                        : "react-candles-ew-resize-cursor";
 
                     const dragHandler =
                         j === 0

@@ -1,5 +1,5 @@
 import * as React from "react";
-import { getXValue } from "@react-financial-charts/core/lib/utils/ChartDataUtil";
+import { getXValue } from "@react-candles/core/lib/utils/ChartDataUtil";
 import { isHover, saveNodeType } from "../utils";
 import { HoverTextNearMouse, InteractiveText } from "../components";
 
@@ -105,7 +105,7 @@ export class EachText extends React.Component<EachTextProps, EachTextState> {
                 <InteractiveText
                     ref={this.saveNodeType("text")}
                     selected={selected || hover}
-                    interactiveCursorClass="react-financial-charts-move-cursor"
+                    interactiveCursorClass="react-candles-move-cursor"
                     {...hoverHandler}
                     onDragStart={this.handleDragStart}
                     onDrag={this.handleDrag}

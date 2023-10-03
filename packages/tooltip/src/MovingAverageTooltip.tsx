@@ -1,4 +1,4 @@
-import { functor, GenericChartComponent, last, MoreProps } from "@react-financial-charts/core";
+import { functor, GenericChartComponent, last, MoreProps } from "@react-candles/core";
 import { format } from "d3-format";
 import * as React from "react";
 import { ToolTipText } from "./ToolTipText";
@@ -75,7 +75,7 @@ interface MovingAverageTooltipProps {
 // tslint:disable-next-line: max-classes-per-file
 export class MovingAverageTooltip extends React.Component<MovingAverageTooltipProps> {
     public static defaultProps = {
-        className: "react-financial-charts-tooltip react-financial-charts-moving-average-tooltip",
+        className: "react-candles-tooltip react-candles-moving-average-tooltip",
         displayFormat: format(".2f"),
         displayInit: "n/a",
         displayValuesFor: (_: any, props: any) => props.currentItem,

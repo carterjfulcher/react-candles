@@ -1,5 +1,5 @@
 import * as React from "react";
-import { ChartContext, GenericChartComponent, getMouseCanvas, isDefined, noop } from "@react-financial-charts/core";
+import { ChartContext, GenericChartComponent, getMouseCanvas, isDefined, noop } from "@react-candles/core";
 import { HoverTextNearMouse } from "./components";
 import { getValueFromOverride, isHoverForInteractiveType, saveNodeType, terminate } from "./utils";
 import { EachText } from "./wrapper";
@@ -100,7 +100,7 @@ export class InteractiveText extends React.Component<InteractiveTextProps, Inter
                             position={getValueFromOverride(override, idx, "position", each.position)}
                             onDrag={this.handleDrag}
                             onDragComplete={this.handleDragComplete}
-                            edgeInteractiveCursor="react-financial-charts-move-cursor"
+                            edgeInteractiveCursor="react-candles-move-cursor"
                         />
                     );
                 })}

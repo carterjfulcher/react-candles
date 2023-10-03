@@ -1,6 +1,6 @@
 import { format } from "d3-format";
 import * as React from "react";
-import { ChartContext, isDefined, strokeDashTypes } from "@react-financial-charts/core";
+import { ChartContext, isDefined, strokeDashTypes } from "@react-candles/core";
 import { HoverTextNearMouse } from "./components";
 import { getValueFromOverride, isHoverForInteractiveType, saveNodeType, terminate } from "./utils";
 import { EachInteractiveYCoordinate } from "./wrapper";
@@ -141,7 +141,7 @@ export class InteractiveYCoordinate extends React.Component<InteractiveYCoordina
                             onDelete={this.handleDelete}
                             onDrag={this.handleDrag}
                             onDragComplete={this.handleDragComplete}
-                            edgeInteractiveCursor="react-financial-charts-move-cursor"
+                            edgeInteractiveCursor="react-candles-move-cursor"
                         />
                     );
                 })}

@@ -1,6 +1,6 @@
 import { ScaleContinuousNumeric } from "d3-scale";
 import * as React from "react";
-import { isDefined, isNotDefined, getAxisCanvas, GenericChartComponent } from "@react-financial-charts/core";
+import { isDefined, isNotDefined, getAxisCanvas, GenericChartComponent } from "@react-candles/core";
 
 export interface PointAndFigureSeriesProps {
     readonly className?: string;
@@ -18,7 +18,7 @@ export interface PointAndFigureSeriesProps {
 
 export class PointAndFigureSeries extends React.Component<PointAndFigureSeriesProps> {
     public static defaultProps = {
-        className: "react-financial-charts-point-and-figure",
+        className: "react-candles-point-and-figure",
         strokeWidth: 1,
         stroke: {
             up: "#6BA583",

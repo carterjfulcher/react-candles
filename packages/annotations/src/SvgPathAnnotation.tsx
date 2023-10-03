@@ -1,4 +1,4 @@
-import { functor } from "@react-financial-charts/core";
+import { functor } from "@react-candles/core";
 import { ScaleContinuousNumeric } from "d3-scale";
 import * as React from "react";
 
@@ -52,7 +52,7 @@ export interface SvgPathAnnotationProps {
 
 export class SvgPathAnnotation extends React.Component<SvgPathAnnotationProps> {
     public static defaultProps = {
-        className: "react-financial-charts-svg-path-annotation",
+        className: "react-candles-svg-path-annotation",
         opacity: 1,
         x: ({
             xScale,

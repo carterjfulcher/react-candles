@@ -23,7 +23,7 @@ export interface StochasticSeriesProps {
  */
 export class StochasticSeries extends React.Component<StochasticSeriesProps> {
     public static defaultProps = {
-        className: "react-financial-charts-stochastic-series",
+        className: "react-candles-stochastic-series",
         strokeStyle: {
             top: "rgba(150, 75, 0, 0.3)",
             middle: "rgba(0, 0, 0, 0.3)",

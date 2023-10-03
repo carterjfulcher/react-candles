@@ -1,5 +1,5 @@
 import * as React from "react";
-import { isDefined, isNotDefined, noop, strokeDashTypes } from "@react-financial-charts/core";
+import { isDefined, isNotDefined, noop, strokeDashTypes } from "@react-candles/core";
 import { getValueFromOverride, isHoverForInteractiveType, saveNodeType, terminate } from "./utils";
 import { HoverTextNearMouse, MouseLocationIndicator, InteractiveStraightLine } from "./components";
 import { EachTrendLine } from "./wrapper";
@@ -151,8 +151,8 @@ export class TrendLine extends React.Component<TrendLineProps, TrendLineState> {
                             hoverText={hoverTextWithDefault}
                             onDrag={this.handleDragLine}
                             onDragComplete={this.handleDragLineComplete}
-                            edgeInteractiveCursor="react-financial-charts-move-cursor"
-                            lineInteractiveCursor="react-financial-charts-move-cursor"
+                            edgeInteractiveCursor="react-candles-move-cursor"
+                            lineInteractiveCursor="react-candles-move-cursor"
                         />
                     );
                 })}

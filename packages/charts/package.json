@@ -1,5 +1,5 @@
 {
-    "name": "react-financial-charts",
+    "name": "react-candles",
     "version": "2.0.1",
     "description": "React charts specific to finance.",
     "main": "./lib/index.js",
@@ -23,10 +23,10 @@
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "https://github.com/reactivemarkets/react-financial-charts.git"
+        "url": "https://github.com/reactivemarkets/react-candles.git"
     },
     "bugs": {
-        "url": "https://github.com/reactivemarkets/react-financial-charts/issues"
+        "url": "https://github.com/reactivemarkets/react-candles/issues"
     },
     "scripts": {
         "build": "npm run clean && npm run compile",
@@ -34,16 +34,16 @@
         "compile": "tsc -p tsconfig.json"
     },
     "dependencies": {
-        "@react-financial-charts/annotations": "file:../annotations",
-        "@react-financial-charts/axes": "file:../axes",
-        "@react-financial-charts/coordinates": "file:../coordinates",
-        "@react-financial-charts/core": "file:../core",
-        "@react-financial-charts/indicators": "file:../indicators",
-        "@react-financial-charts/interactive": "file:../interactive",
-        "@react-financial-charts/scales": "file:../scales",
-        "@react-financial-charts/series": "file:../series",
-        "@react-financial-charts/tooltip": "file:../tooltip",
-        "@react-financial-charts/utils": "file:../utils"
+        "@react-candles/annotations": "file:../annotations",
+        "@react-candles/axes": "file:../axes",
+        "@react-candles/coordinates": "file:../coordinates",
+        "@react-candles/core": "file:../core",
+        "@react-candles/indicators": "file:../indicators",
+        "@react-candles/interactive": "file:../interactive",
+        "@react-candles/scales": "file:../scales",
+        "@react-candles/series": "file:../series",
+        "@react-candles/tooltip": "file:../tooltip",
+        "@react-candles/utils": "file:../utils"
     },
     "peerDependencies": {
         "react": "^16.0.0 || ^17.0.0 || ^18.0.0",

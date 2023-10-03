@@ -1,11 +1,11 @@
 import * as React from "react";
-import { Chart, ChartCanvas } from "@react-financial-charts/core";
-import { XAxis, YAxis } from "@react-financial-charts/axes";
-import { discontinuousTimeScaleProviderBuilder } from "@react-financial-charts/scales";
-import { BarSeries, CandlestickSeries, VolumeProfileSeries } from "@react-financial-charts/series";
+import { Chart, ChartCanvas } from "@react-candles/core";
+import { XAxis, YAxis } from "@react-candles/axes";
+import { discontinuousTimeScaleProviderBuilder } from "@react-candles/scales";
+import { BarSeries, CandlestickSeries, VolumeProfileSeries } from "@react-candles/series";
 import { IOHLCData, withOHLCData } from "../../data";
-import { withDeviceRatio, withSize } from "@react-financial-charts/utils";
-import { change } from "@react-financial-charts/indicators";
+import { withDeviceRatio, withSize } from "@react-candles/utils";
+import { change } from "@react-candles/indicators";
 
 interface ChartProps {
     readonly data: IOHLCData[];

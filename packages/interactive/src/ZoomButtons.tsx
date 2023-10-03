@@ -1,4 +1,4 @@
-import { ChartContext, last } from "@react-financial-charts/core";
+import { ChartContext, last } from "@react-candles/core";
 import { interpolateNumber } from "d3-interpolate";
 import * as React from "react";
 
@@ -45,9 +45,9 @@ export class ZoomButtons extends React.Component<ZoomButtonsProps> {
         const resetX = centerX + 16 + r * 2;
 
         return (
-            <g className="react-financial-charts-zoom-buttons">
+            <g className="react-candles-zoom-buttons">
                 <circle
-                    className="react-financial-charts-button"
+                    className="react-candles-button"
                     cx={zoomOutX - r / 2}
                     cy={y + r / 2}
                     fill={fill}
@@ -60,7 +60,7 @@ export class ZoomButtons extends React.Component<ZoomButtonsProps> {
                     <path d="M19,13H5V11H19V13Z" fill={textFill} />
                 </g>
                 <circle
-                    className="react-financial-charts-button"
+                    className="react-candles-button"
                     cx={zoomInX - r / 2}
                     cy={y + r / 2}
                     fill={fill}
@@ -73,7 +73,7 @@ export class ZoomButtons extends React.Component<ZoomButtonsProps> {
                     <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6z" fill={textFill} />
                 </g>
                 <circle
-                    className="react-financial-charts-button"
+                    className="react-candles-button"
                     cx={resetX - r / 2}
                     cy={y + r / 2}
                     fill={fill}
@@ -89,7 +89,7 @@ export class ZoomButtons extends React.Component<ZoomButtonsProps> {
                     />
                 </g>
                 <circle
-                    className="react-financial-charts-enable-interaction out"
+                    className="react-candles-enable-interaction out"
                     onClick={this.handleZoomOut}
                     cx={zoomOutX - r / 2}
                     cy={y + r / 2}
@@ -97,7 +97,7 @@ export class ZoomButtons extends React.Component<ZoomButtonsProps> {
                     fill="none"
                 />
                 <circle
-                    className="react-financial-charts-enable-interaction in"
+                    className="react-candles-enable-interaction in"
                     onClick={this.handleZoomIn}
                     cx={zoomInX - r / 2}
                     cy={y + r / 2}
@@ -105,7 +105,7 @@ export class ZoomButtons extends React.Component<ZoomButtonsProps> {
                     fill="none"
                 />
                 <circle
-                    className="react-financial-charts-enable-interaction reset"
+                    className="react-candles-enable-interaction reset"
                     onClick={onReset}
                     cx={resetX - r / 2}
                     cy={y + r / 2}

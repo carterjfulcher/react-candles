@@ -1,5 +1,5 @@
 import * as React from "react";
-import { isDefined, isNotDefined } from "@react-financial-charts/core";
+import { isDefined, isNotDefined } from "@react-candles/core";
 import { getValueFromOverride, isHoverForInteractiveType, saveNodeType, terminate } from "./utils";
 import { HoverTextNearMouse, MouseLocationIndicator } from "./components";
 import { EachLinearRegressionChannel } from "./wrapper";
@@ -143,7 +143,7 @@ export class StandardDeviationChannel extends React.Component<
                             hoverText={eachHoverText}
                             onDrag={this.handleDragLine}
                             onDragComplete={this.handleDragLineComplete}
-                            edgeInteractiveCursor="react-financial-charts-move-cursor"
+                            edgeInteractiveCursor="react-candles-move-cursor"
                         />
                     );
                 })}

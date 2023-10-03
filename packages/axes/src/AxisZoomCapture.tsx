@@ -10,7 +10,7 @@ import {
     TOUCHEND,
     TOUCHMOVE,
     touchPosition,
-} from "@react-financial-charts/core";
+} from "@react-candles/core";
 import { mean } from "d3-array";
 import { ScaleContinuousNumeric } from "d3-scale";
 import { select, pointer } from "d3-selection";
@@ -63,12 +63,11 @@ export class AxisZoomCapture extends React.Component<AxisZoomCaptureProps, AxisZ
     public render() {
         const { bg, className, zoomCursorClassName } = this.props;
 
-        const cursor =
-            this.state.startPosition !== null ? zoomCursorClassName : "react-financial-charts-default-cursor";
+        const cursor = this.state.startPosition !== null ? zoomCursorClassName : "react-candles-default-cursor";
 
         return (
             <rect
-                className={`react-financial-charts-enable-interaction ${cursor} ${className}`}
+                className={`react-candles-enable-interaction ${cursor} ${className}`}
                 ref={this.ref}
                 x={bg.x}
                 y={bg.y}

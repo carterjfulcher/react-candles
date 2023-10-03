@@ -1,4 +1,4 @@
-import { ChartContext, strokeDashTypes } from "@react-financial-charts/core";
+import { ChartContext, strokeDashTypes } from "@react-candles/core";
 import * as React from "react";
 import { Axis } from "./Axis";
 
@@ -41,8 +41,8 @@ export interface YAxisProps {
 export class YAxis extends React.Component<YAxisProps> {
     public static defaultProps = {
         axisAt: "right",
-        className: "react-financial-charts-y-axis",
-        domainClassName: "react-financial-charts-axis-domain",
+        className: "react-candles-y-axis",
+        domainClassName: "react-candles-axis-domain",
         fontFamily: "-apple-system, system-ui, Roboto, 'Helvetica Neue', Ubuntu, sans-serif",
         fontSize: 12,
         fontWeight: 400,
@@ -63,7 +63,7 @@ export class YAxis extends React.Component<YAxisProps> {
         tickStrokeStyle: "#000000",
         yZoomWidth: 40,
         zoomEnabled: true,
-        zoomCursorClassName: "react-financial-charts-ns-resize-cursor",
+        zoomCursorClassName: "react-candles-ns-resize-cursor",
     };
 
     public static contextType = ChartContext;

@@ -1,4 +1,4 @@
-import { ChartContext, strokeDashTypes } from "@react-financial-charts/core";
+import { ChartContext, strokeDashTypes } from "@react-candles/core";
 import * as React from "react";
 import { Axis } from "./Axis";
 
@@ -41,8 +41,8 @@ export interface XAxisProps<T extends number | Date> {
 export class XAxis<T extends number | Date> extends React.Component<XAxisProps<T>> {
     public static defaultProps = {
         axisAt: "bottom",
-        className: "react-financial-charts-x-axis",
-        domainClassName: "react-financial-charts-axis-domain",
+        className: "react-candles-x-axis",
+        domainClassName: "react-candles-axis-domain",
         fontFamily: "-apple-system, system-ui, Roboto, 'Helvetica Neue', Ubuntu, sans-serif",
         fontSize: 12,
         fontWeight: 400,
@@ -63,7 +63,7 @@ export class XAxis<T extends number | Date> extends React.Component<XAxisProps<T
         tickStrokeStyle: "#000000",
         xZoomHeight: 25,
         zoomEnabled: true,
-        zoomCursorClassName: "react-financial-charts-ew-resize-cursor",
+        zoomCursorClassName: "react-candles-ew-resize-cursor",
     };
 
     public static contextType = ChartContext;

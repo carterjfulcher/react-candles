@@ -17,7 +17,7 @@ export interface BollingerSeriesProps {
 
 export class BollingerSeries extends React.Component<BollingerSeriesProps> {
     public static defaultProps = {
-        areaClassName: "react-financial-charts-bollinger-band-series-area",
+        areaClassName: "react-candles-bollinger-band-series-area",
         fillStyle: "rgba(38, 166, 153, 0.05)",
         strokeStyle: {
             top: "#26a69a",

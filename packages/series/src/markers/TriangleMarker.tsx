@@ -1,5 +1,5 @@
 import * as React from "react";
-import { functor } from "@react-financial-charts/core";
+import { functor } from "@react-candles/core";
 
 export interface TriangleProps {
     readonly className?: string;
@@ -19,7 +19,7 @@ export class Triangle extends React.Component<TriangleProps> {
     public static defaultProps = {
         direction: "top",
         fillStyle: "#4682B4",
-        className: "react-financial-charts-marker-triangle",
+        className: "react-candles-marker-triangle",
     };
 
     public static drawOnCanvas = (

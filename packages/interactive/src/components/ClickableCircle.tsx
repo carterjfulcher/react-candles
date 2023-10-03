@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import { getMouseCanvas, GenericChartComponent } from "@react-financial-charts/core";
+import { getMouseCanvas, GenericChartComponent } from "@react-candles/core";
 
 export interface ClickableCircleProps {
     readonly onDragStart?: (e: React.MouseEvent, moreProps: any) => void;
@@ -20,7 +20,7 @@ export interface ClickableCircleProps {
 
 export class ClickableCircle extends React.Component<ClickableCircleProps> {
     public static defaultProps = {
-        className: "react-financial-charts-interactive-line-edge",
+        className: "react-candles-interactive-line-edge",
         show: false,
     };
 

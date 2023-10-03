@@ -14,7 +14,7 @@ import {
     HoverTooltip,
     withDeviceRatio,
     withSize,
-} from "react-financial-charts";
+} from "react-candles";
 import { IOHLCData, withOHLCData } from "../../data";
 
 interface ChartProps {

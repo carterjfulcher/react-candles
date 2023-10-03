@@ -1,6 +1,6 @@
 import * as React from "react";
-import { isDefined, noop } from "@react-financial-charts/core";
-import { getXValue } from "@react-financial-charts/core/lib/utils/ChartDataUtil";
+import { isDefined, noop } from "@react-candles/core";
+import { getXValue } from "@react-candles/core/lib/utils/ChartDataUtil";
 import { isHover, saveNodeType } from "../utils";
 import { ChannelWithArea, ClickableCircle, HoverTextNearMouse } from "../components";
 
@@ -84,14 +84,14 @@ export class EachEquidistantChannel extends React.Component<EachEquidistantChann
                     {this.getEdgeCircle({
                         xy: startXY,
                         dragHandler: this.handleLine1Edge1Drag,
-                        cursor: "react-financial-charts-move-cursor",
+                        cursor: "react-candles-move-cursor",
                         fill: edgeFill,
                         edge: "line1edge1",
                     })}
                     {this.getEdgeCircle({
                         xy: endXY,
                         dragHandler: this.handleLine1Edge2Drag,
-                        cursor: "react-financial-charts-move-cursor",
+                        cursor: "react-candles-move-cursor",
                         fill: edgeFill,
                         edge: "line1edge2",
                     })}
@@ -103,14 +103,14 @@ export class EachEquidistantChannel extends React.Component<EachEquidistantChann
                     {this.getEdgeCircle({
                         xy: [startXY[0], startXY[1] + dy],
                         dragHandler: this.handleChannelHeightChange,
-                        cursor: "react-financial-charts-ns-resize-cursor",
+                        cursor: "react-candles-ns-resize-cursor",
                         fill: edgeFill2,
                         edge: "line2edge1",
                     })}
                     {this.getEdgeCircle({
                         xy: [endXY[0], endXY[1] + dy],
                         dragHandler: this.handleChannelHeightChange,
-                        cursor: "react-financial-charts-ns-resize-cursor",
+                        cursor: "react-candles-ns-resize-cursor",
                         fill: edgeFill2,
                         edge: "line2edge2",
                     })}
@@ -129,7 +129,7 @@ export class EachEquidistantChannel extends React.Component<EachEquidistantChann
                     strokeStyle={stroke}
                     strokeWidth={hover || selected ? strokeWidth + 1 : strokeWidth}
                     fillStyle={fill}
-                    interactiveCursorClass="react-financial-charts-move-cursor"
+                    interactiveCursorClass="react-candles-move-cursor"
                     onDragStart={this.handleDragStart}
                     onDrag={this.handleChannelDrag}
                     onDragComplete={onDragComplete}

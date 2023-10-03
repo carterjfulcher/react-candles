@@ -1,4 +1,4 @@
-import { GenericChartComponent, last } from "@react-financial-charts/core";
+import { GenericChartComponent, last } from "@react-candles/core";
 import { format } from "d3-format";
 import * as React from "react";
 import { layouts, SingleTooltip } from "./SingleTooltip";
@@ -29,7 +29,7 @@ export interface GroupTooltipProps {
 
 export class GroupTooltip extends React.Component<GroupTooltipProps> {
     public static defaultProps = {
-        className: "react-financial-charts-tooltip react-financial-charts-group-tooltip",
+        className: "react-candles-tooltip react-candles-group-tooltip",
         layout: "horizontal",
         displayFormat: format(".2f"),
         displayInit: "",

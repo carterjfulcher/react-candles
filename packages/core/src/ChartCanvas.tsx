@@ -26,43 +26,43 @@ const shouldResetChart = (thisProps: any, nextProps: any) => {
 
 const getCursorStyle = () => {
     const tooltipStyle = `
-	.react-financial-charts-grabbing-cursor {
+	.react-candles-grabbing-cursor {
 		pointer-events: all;
 		cursor: -moz-grabbing;
 		cursor: -webkit-grabbing;
 		cursor: grabbing;
 	}
-	.react-financial-charts-crosshair-cursor {
+	.react-candles-crosshair-cursor {
 		pointer-events: all;
 		cursor: crosshair;
 	}
-	.react-financial-charts-tooltip-hover {
+	.react-candles-tooltip-hover {
 		pointer-events: all;
 		cursor: pointer;
 	}
-	.react-financial-charts-avoid-interaction {
+	.react-candles-avoid-interaction {
 		pointer-events: none;
 	}
-	.react-financial-charts-enable-interaction {
+	.react-candles-enable-interaction {
 		pointer-events: all;
 	}
-	.react-financial-charts-tooltip {
+	.react-candles-tooltip {
 		pointer-events: all;
 		cursor: pointer;
 	}
-	.react-financial-charts-default-cursor {
+	.react-candles-default-cursor {
 		cursor: default;
 	}
-	.react-financial-charts-move-cursor {
+	.react-candles-move-cursor {
 		cursor: move;
 	}
-	.react-financial-charts-pointer-cursor {
+	.react-candles-pointer-cursor {
 		cursor: pointer;
 	}
-	.react-financial-charts-ns-resize-cursor {
+	.react-candles-ns-resize-cursor {
 		cursor: ns-resize;
 	}
-	.react-financial-charts-ew-resize-cursor {
+	.react-candles-ew-resize-cursor {
 		cursor: ew-resize;
 	}`;
     return <style type="text/css">{tooltipStyle}</style>;
@@ -427,7 +427,7 @@ export class ChartCanvas<TXAxis extends number | Date> extends React.Component<
 > {
     public static defaultProps = {
         clamp: false,
-        className: "react-financial-charts",
+        className: "react-candles",
         defaultFocus: true,
         disablePan: false,
         disableInteraction: false,
@@ -1326,7 +1326,7 @@ export class ChartCanvas<TXAxis extends number | Date> extends React.Component<
                                 onPanEnd={this.handlePanEnd}
                             />
 
-                            <g className="react-financial-charts-avoid-interaction">{this.props.children}</g>
+                            <g className="react-candles-avoid-interaction">{this.props.children}</g>
                         </g>
                     </svg>
                 </div>

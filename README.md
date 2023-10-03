@@ -1,6 +1,6 @@
 # React Candles
 
-> **Note:** this repo originates from [react-stockcharts](https://github.com/rrag/react-stockcharts). It was converted to typescript by `react-financial` under the name, `react-financial-charts`, and in this latest fork, `react-candles` functional components and realtime support was added.
+> **Note:** this repo originates from [react-stockcharts](https://github.com/rrag/react-stockcharts). It was converted to typescript by `react-financial` under the name, `react-candles`, and in this latest fork, `react-candles` functional components and realtime support was added.
 
 ## Features
 
@@ -46,12 +46,12 @@
 ## Installation
 
 ```sh
-npm install react-financial-charts
+npm install react-candles
 ```
 
 ## Documentation
 
-[Stories](https://react-financial.github.io/react-financial-charts/)
+[Stories](https://react-financial.github.io/react-candles/)
 
 ## Contributing
 
@@ -62,7 +62,7 @@ This project is a mono-repo that uses [Lerna](https://lerna.js.org/) to manage d
 To get started run:
 
 ```bash
-git clone https://github.com/react-financial/react-financial-charts.git
+git clone https://github.com/react-financial/react-candles.git
 cd react-candles
 npm ci
 npm run build

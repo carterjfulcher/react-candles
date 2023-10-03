@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import { getStrokeDasharray, getStrokeDasharrayCanvas, isDefined } from "@react-financial-charts/core";
+import { getStrokeDasharray, getStrokeDasharrayCanvas, isDefined } from "@react-candles/core";
 
 export const renderSVG = (props: any) => {
     const { className } = props;
@@ -17,7 +17,7 @@ export const renderSVG = (props: any) => {
     if (edge.line !== undefined) {
         line = (
             <line
-                className="react-financial-charts-cross-hair"
+                className="react-candles-cross-hair"
                 stroke={edge.line.stroke}
                 strokeDasharray={getStrokeDasharray(edge.line.strokeDasharray)}
                 x1={edge.line.x1}
@@ -42,7 +42,7 @@ export const renderSVG = (props: any) => {
                 <g key={1} transform={`translate(${edge.coordinateBase.edgeXRect},${edge.coordinateBase.edgeYRect})`}>
                     <path
                         d={path}
-                        className="react-financial-charts-text-background"
+                        className="react-candles-text-background"
                         height={rectHeight}
                         width={rectWidth}
                         stroke={edge.coordinateBase.stroke}
@@ -54,7 +54,7 @@ export const renderSVG = (props: any) => {
             ) : (
                 <rect
                     key={1}
-                    className="react-financial-charts-text-background"
+                    className="react-candles-text-background"
                     x={edge.coordinateBase.edgeXRect}
                     y={edge.coordinateBase.edgeYRect}
                     height={rectHeight}

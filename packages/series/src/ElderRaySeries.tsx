@@ -1,4 +1,4 @@
-import { strokeDashTypes } from "@react-financial-charts/core";
+import { strokeDashTypes } from "@react-candles/core";
 import * as React from "react";
 import { OverlayBarSeries } from "./OverlayBarSeries";
 import { StraightLine } from "./StraightLine";
@@ -29,7 +29,7 @@ export class ElderRaySeries extends React.Component<ElderRaySeriesProps> {
             bearPower: "rgba(239, 83, 80, 0.7)",
             bullPower: "rgba(38, 166, 153, 0.7)",
         },
-        className: "react-financial-charts-elderray-series",
+        className: "react-candles-elderray-series",
         clip: true,
         stroke: true,
         straightLineStrokeStyle: "rgba(0, 0, 0, 0.7)",

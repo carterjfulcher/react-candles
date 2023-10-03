@@ -1,4 +1,4 @@
-import { functor } from "@react-financial-charts/core";
+import { functor } from "@react-candles/core";
 import { ScaleContinuousNumeric } from "d3-scale";
 import * as React from "react";
 
@@ -67,7 +67,7 @@ export interface BarAnnotationProps {
 
 export class BarAnnotation extends React.Component<BarAnnotationProps> {
     public static defaultProps = {
-        className: "react-financial-charts-bar-annotation",
+        className: "react-candles-bar-annotation",
         opacity: 1,
         fill: "#000000",
         fontFamily: "-apple-system, system-ui, Roboto, 'Helvetica Neue', Ubuntu, sans-serif",

@@ -9,7 +9,7 @@
         "build": "lerna run build",
         "build:annotations": "lerna run build --scope='*/annotations'",
         "build:axes": "lerna run build --scope='*/axes'",
-        "build:charts": "lerna run build --scope='react-financial-charts'",
+        "build:charts": "lerna run build --scope='react-candles'",
         "build:coordinates": "lerna run build --scope='*/coordinates'",
         "build:core": "lerna run build --scope='*/core'",
         "build:indicators": "lerna run build --scope='*/indicators'",
@@ -79,17 +79,17 @@
         "typescript": "^4.9.5"
     },
     "dependencies": {
-        "@react-financial-charts/annotations": "file:packages/annotations",
-        "@react-financial-charts/axes": "file:packages/axes",
-        "@react-financial-charts/coordinates": "file:packages/coordinates",
-        "@react-financial-charts/core": "file:packages/core",
-        "@react-financial-charts/indicators": "file:packages/indicators",
-        "@react-financial-charts/interactive": "file:packages/interactive",
-        "@react-financial-charts/scales": "file:packages/scales",
-        "@react-financial-charts/series": "file:packages/series",
-        "@react-financial-charts/stories": "file:packages/stories",
-        "@react-financial-charts/tooltip": "file:packages/tooltip",
-        "@react-financial-charts/utils": "file:packages/utils",
-        "react-financial-charts": "file:packages/charts"
+        "@react-candles/annotations": "file:packages/annotations",
+        "@react-candles/axes": "file:packages/axes",
+        "@react-candles/coordinates": "file:packages/coordinates",
+        "@react-candles/core": "file:packages/core",
+        "@react-candles/indicators": "file:packages/indicators",
+        "@react-candles/interactive": "file:packages/interactive",
+        "@react-candles/scales": "file:packages/scales",
+        "@react-candles/series": "file:packages/series",
+        "@react-candles/stories": "file:packages/stories",
+        "@react-candles/tooltip": "file:packages/tooltip",
+        "@react-candles/utils": "file:packages/utils",
+        "react-candles": "file:packages/charts"
     }
 }

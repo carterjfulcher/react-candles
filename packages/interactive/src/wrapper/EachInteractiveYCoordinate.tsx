@@ -1,5 +1,5 @@
 import * as React from "react";
-import { strokeDashTypes } from "@react-financial-charts/core";
+import { strokeDashTypes } from "@react-candles/core";
 import { isHover, saveNodeType } from "../utils";
 import { ClickableShape, InteractiveYCoordinate } from "../components";
 
@@ -102,7 +102,7 @@ export class EachInteractiveYCoordinate extends React.Component<
                     ref={this.saveNodeType("priceCoordinate")}
                     selected={selected && !closeIconHover}
                     hovering={hover || closeIconHover}
-                    interactiveCursorClass="react-financial-charts-move-cursor"
+                    interactiveCursorClass="react-candles-move-cursor"
                     {...hoverHandler}
                     {...dragProps}
                     yValue={yValue}

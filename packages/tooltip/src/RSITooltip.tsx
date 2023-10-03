@@ -1,4 +1,4 @@
-import { functor, isDefined, GenericChartComponent } from "@react-financial-charts/core";
+import { functor, isDefined, GenericChartComponent } from "@react-candles/core";
 import { format } from "d3-format";
 import * as React from "react";
 import { ToolTipText } from "./ToolTipText";
@@ -29,7 +29,7 @@ export class RSITooltip extends React.Component<RSITooltipProps> {
         displayInit: "n/a",
         displayValuesFor: (_: RSITooltipProps, props: any) => props.currentItem,
         origin: [0, 0],
-        className: "react-financial-charts-tooltip",
+        className: "react-candles-tooltip",
     };
 
     public render() {

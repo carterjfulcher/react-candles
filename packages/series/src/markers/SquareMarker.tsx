@@ -1,5 +1,5 @@
 import * as React from "react";
-import { functor } from "@react-financial-charts/core";
+import { functor } from "@react-candles/core";
 
 export interface SquareProps {
     readonly className?: string;
@@ -17,7 +17,7 @@ export interface SquareProps {
 export class Square extends React.Component<SquareProps> {
     public static defaultProps = {
         fillStyle: "#4682B4",
-        className: "react-financial-charts-marker-rect",
+        className: "react-candles-marker-rect",
     };
 
     public static drawOnCanvas = (

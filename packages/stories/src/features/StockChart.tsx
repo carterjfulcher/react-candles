@@ -25,7 +25,7 @@ import {
     ZoomButtons,
     withDeviceRatio,
     withSize,
-} from "react-financial-charts";
+} from "react-candles";
 import { IOHLCData, withOHLCData } from "../data";
 
 interface StockChartProps {

@@ -12,7 +12,7 @@ import {
     Cursor,
     CursorProps,
     CurrentCoordinate,
-} from "react-financial-charts";
+} from "react-candles";
 import { IOHLCData, withOHLCData } from "../../data";
 
 interface ChartProps extends CursorProps {

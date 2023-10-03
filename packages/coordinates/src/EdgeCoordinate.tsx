@@ -86,7 +86,7 @@ export interface EdgeCoordinateProps {
 
 export class EdgeCoordinate extends React.Component<EdgeCoordinateProps> {
     public static defaultProps = {
-        className: "react-financial-charts-edgecoordinate",
+        className: "react-candles-edgecoordinate",
         orient: "left",
         hideLine: false,
         fill: "#8a8a8a",
@@ -167,7 +167,7 @@ export class EdgeCoordinate extends React.Component<EdgeCoordinateProps> {
         if (edge.line !== undefined) {
             line = (
                 <line
-                    className="react-financial-charts-cross-hair"
+                    className="react-candles-cross-hair"
                     stroke={edge.line.stroke}
                     x1={edge.line.x1}
                     y1={edge.line.y1}
@@ -195,7 +195,7 @@ export class EdgeCoordinate extends React.Component<EdgeCoordinateProps> {
                         <path
                             d={path}
                             key={1}
-                            className="react-financial-charts-text-background"
+                            className="react-candles-text-background"
                             height={rectHeight}
                             width={rectWidth}
                             fill={edge.coordinateBase.fill}
@@ -204,7 +204,7 @@ export class EdgeCoordinate extends React.Component<EdgeCoordinateProps> {
                 ) : (
                     <rect
                         key={1}
-                        className="react-financial-charts-text-background"
+                        className="react-candles-text-background"
                         x={edge.coordinateBase.edgeXRect}
                         y={edge.coordinateBase.edgeYRect}
                         height={rectHeight}

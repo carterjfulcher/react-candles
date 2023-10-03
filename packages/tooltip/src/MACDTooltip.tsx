@@ -1,4 +1,4 @@
-import { functor, GenericChartComponent, last } from "@react-financial-charts/core";
+import { functor, GenericChartComponent, last } from "@react-candles/core";
 import { format } from "d3-format";
 import * as React from "react";
 import { ToolTipText } from "./ToolTipText";
@@ -35,7 +35,7 @@ export interface MACDTooltipProps {
 
 export class MACDTooltip extends React.Component<MACDTooltipProps> {
     public static defaultProps = {
-        className: "react-financial-charts-tooltip",
+        className: "react-candles-tooltip",
         displayFormat: format(".2f"),
         displayInit: "n/a",
         displayValuesFor: (_: any, props: any) => props.currentItem,

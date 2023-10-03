@@ -1,4 +1,4 @@
-import { functor } from "@react-financial-charts/core";
+import { functor } from "@react-candles/core";
 import * as React from "react";
 
 export interface CircleMarkerProps {
@@ -17,7 +17,7 @@ export interface CircleMarkerProps {
 export class CircleMarker extends React.Component<CircleMarkerProps> {
     public static defaultProps = {
         fillStyle: "#4682B4",
-        className: "react-financial-charts-marker-circle",
+        className: "react-candles-marker-circle",
     };
 
     public static drawOnCanvas = (

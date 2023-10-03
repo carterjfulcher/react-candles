@@ -9,7 +9,7 @@ import {
     withDeviceRatio,
     withSize,
     IZoomAnchorOptions,
-} from "react-financial-charts";
+} from "react-candles";
 import { IOHLCData, withOHLCData } from "../../data";
 
 interface ChartProps {

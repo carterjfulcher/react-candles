@@ -1,10 +1,5 @@
 import * as React from "react";
-import {
-    getStrokeDasharrayCanvas,
-    getMouseCanvas,
-    GenericChartComponent,
-    strokeDashTypes,
-} from "@react-financial-charts/core";
+import { getStrokeDasharrayCanvas, getMouseCanvas, GenericChartComponent, strokeDashTypes } from "@react-candles/core";
 
 interface BrushProps {
     readonly enabled: boolean;

@@ -188,7 +188,7 @@ export class GenericComponent extends React.Component<GenericComponentProps, Gen
                     amIOnTop(this.subscriberId) &&
                     this.props.onHover !== undefined
                 ) {
-                    setCursorClass("react-financial-charts-pointer-cursor");
+                    setCursorClass("react-candles-pointer-cursor");
                     this.iSetTheCursorClass = true;
                 } else if (this.moreProps.hovering && this.props.selected && amIOnTop(this.subscriberId)) {
                     setCursorClass(this.props.interactiveCursorClass);

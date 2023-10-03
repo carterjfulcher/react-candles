@@ -15,7 +15,7 @@ import {
     withSize,
     XAxis,
     YAxis,
-} from "react-financial-charts";
+} from "react-candles";
 import { IOHLCData, withOHLCData } from "../../data";
 
 interface ChartProps {

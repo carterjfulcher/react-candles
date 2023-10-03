@@ -14,7 +14,7 @@ export function renderSVG(props: any) {
     if (edge.line !== undefined) {
         line = (
             <line
-                className="react-financial-charts-cross-hair"
+                className="react-candles-cross-hair"
                 stroke={edge.line.stroke}
                 x1={edge.line.x1}
                 y1={edge.line.y1}
@@ -40,7 +40,7 @@ export function renderSVG(props: any) {
                     <path
                         d={path}
                         key={1}
-                        className="react-financial-charts-text-background"
+                        className="react-candles-text-background"
                         height={rectHeight}
                         width={rectWidth}
                         fill={edge.coordinateBase.fill}
@@ -49,7 +49,7 @@ export function renderSVG(props: any) {
             ) : (
                 <rect
                     key={1}
-                    className="react-financial-charts-text-background"
+                    className="react-candles-text-background"
                     x={edge.coordinateBase.edgeXRect}
                     y={edge.coordinateBase.edgeYRect}
                     height={rectHeight}
