@@ -4,15 +4,7 @@ on:
   push:
     branches:
       - main
-permissions:
-  contents: read
-  issues: write
-  packages: write
-  pull-requests: write
-  repository-projects: write
-  security-events: write
-  statuses: write
-  pages: write
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
