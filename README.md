@@ -1,12 +1,12 @@
 # React Candles
 
-> **Note:** this repo originates from [react-stockcharts](https://github.com/rrag/react-stockcharts). It was converted to typescript by `react-financial` under the name, `react-candles`, and in this latest fork, `react-candles` functional components and realtime support was added.
+> **Note:** this repo originates from [react-stockcharts](https://github.com/rrag/react-stockcharts). It was converted to typescript by `react-financial` under the name, `react-financial-charts`, and in this latest fork, `react-candles` real time, React 18, and documentation was added.
 
 ## Features
 
--   integrates multiple chart types
 -   technical indicators and overlays
 -   drawing objects
+-   realtime candles
 
 ### Chart types
 
@@ -46,7 +46,7 @@
 ## Installation
 
 ```sh
-npm install react-candles
+yarn add react-candles
 ```
 
 ## Documentation
